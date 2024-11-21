@@ -17,7 +17,7 @@ if [ "$1" = 'server' ]; then
     done
   fi
 
-  exec "/ghidra/server/ghidraSvr" console
+  exec "/ghidra/server/ghidraSvr" console ${GHIDRA_PUBLIC_INTERFACE:=""}
 fi
 
 exec "$@"
